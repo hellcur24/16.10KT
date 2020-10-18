@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estonia COVID Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Estonia COVID Stats</h1>
+    <form action="/" method="POST">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"><%= day %></th>
+                <th scope="col">2/27/20</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">New daily cases</th>
+                <td><%= newDaily %></td>
+                <td><%= oldDaily %></td>
+              </tr>
+              <tr>
+                <th scope="row">Total cases</th>
+                <td><%= cases %></td>
+                <td><%= oldCases %></td>
+              </tr>
+              <tr>
+                <th scope="row">Total recoveries</th>
+                <td><%= recoveries %></td>
+                <td><%= oldRecoveries %></td>
+              </tr>
+            </tbody>
+          </table>
+
+    </form>
+</body>
+</html>
